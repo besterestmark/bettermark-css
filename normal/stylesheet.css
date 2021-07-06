@@ -1,0 +1,161 @@
+:root {
+	--background: #261b17;
+	--header: #1b110e;
+	--background-alt: #291812;
+	--hover: #532f28;
+	--highlight: #f99666;
+	--highlight-alt: #fad256;
+	--ui: #e35b15;
+	--ui-alt: #fabc2c;
+	--onclick: #e86420;
+	--visited: #e04220;
+	--green-light: #82a23a;
+	--green-dark: #4d772d;
+	--blue-light: #66a4a4;
+	--blue-dark: #4395a3;
+	--purple-light: #c888e8;
+	--purple-dark: #b666e6;
+	--pink-light: #fab2c2;
+	--pink-dark: #fff;
+	--orange-light: #e86420;
+	--orange-dark: #e35b15;
+	--red-light: #e04220;
+	--red-dark: #e01d1d;
+	--brown-light: #291812;
+	--brown-dark: #1b110e;
+	--yellow-light: #fad256;
+	--yellow-dark: #fabc2c;
+}
+::-webkit-scrollbar {
+	/* ACCESSABILITY */
+	display: none;
+	width: 0px;
+}
+body {
+	padding: 0px;
+}
+html,
+body {
+	font-family: "Fira Code";
+	font-size: 15px;
+	line-height: 1.4;
+	background-color: var(--background, #261b17);
+	color: var(--text, #e4cbb3);
+}
+::selection {
+	color: #fff;
+	background-color: var(--highlight);
+}
+strong {
+	color: var(--text, #e4cbb3);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--highlight, #f99666);
+}
+a {
+	color: var(--ui, #e35b15);
+	text-decoration: underline;
+}
+a:visited {
+	color: var(--visited, #e04220);
+}
+a:hover {
+	color: var(--red-dark, #e01d1d);
+}
+blockquote {
+	background-color: rgba(227, 91, 21, 0.1);
+	color: var(--text, #e4cbb3);
+	font-style: italic;
+	border-radius: 4.2px;
+	border-left: 3.5px solid var(--ui, #e35b15);
+	padding: 0.42em;
+	margin: 0.8em 0.2em 0.5em 0.2em;
+}
+summary {
+	outline: none;
+	user-select: none;
+}
+hr {
+	background-color: var(--highlight, #f99666);
+}
+code {
+	background-color: var(--background-alt, #291812);
+	color: var(--text);
+	line-height: 1.3;
+	padding-bottom: 20px;
+}
+pre {
+	background: var(--background-alt);
+	color: var(--text);
+}
+pre code {
+	background: var(--background-alt);
+	color: var(--text);
+}
+mark {
+	background-color: var(--highlight, #f99666);
+	color: var(--header);
+	border-radius: 0.7px;
+	padding: 0.7px;
+}
+ul,
+li,
+dl,
+dt {
+	line-height: 1.9;
+}
+img {
+	padding-top: 7px;
+}
+th {
+	color: var(--text);
+}
+button {
+	color: var(--text);
+	background-color: var(--ui);
+	border: 0px;
+	padding: 0.7em;
+	cursor: pointer;
+}
+button:hover {
+	background-color: var(--onclick);
+	transition: 300ms;
+}
+/*--------Custom classes--------*/
+.spoiler {
+	background-color: var(--header);
+	color: var(--header);
+	border-radius: 0.3em;
+	padding: 10px;
+}
+.spoiler:hover {
+	background-color: var(--background-alt);
+	color: var(--highlight);
+	transition: 600ms;
+	transition-delay: 175ms;
+}
+.WARNING {
+	text-align: center;
+	color: var(--visited);
+	background-color: var(--background-alt);
+	padding: 10px;
+	padding-bottom: 14px;
+	border: 5px dashed var(--visited);
+	border-radius: 0.5em;
+}
+.WARNING::before {
+	content: "!";
+	color: var(--visited);
+	font-size: 1em;
+}
+.WARNING::after {
+	content: "!";
+	color: var(--visited);
+	font-size: 1em;
+}
+
