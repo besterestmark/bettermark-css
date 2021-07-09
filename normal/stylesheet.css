@@ -90,7 +90,8 @@
 
 	/* Colour vars made easier to customise */
 
-	--accent: var(--orange-light);
+	--accent: var(--purple-dark);
+	--accent-light: var(--purple-light);
 
 	/* Extra non-colour vars */
 
@@ -123,8 +124,8 @@ body {
 	color: var(--fg);
 }
 ::selection {
-	color: #fff;
-	background-color: var(--highlight);
+	color: var(--bg-dark);
+	background-color: var(--accent-light);
 }
 strong {
 	color: var(--fg);
@@ -135,96 +136,72 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--highlight);
+	color: var(--accent-light);
 }
 a {
-	color: var(--ui, #e35b15);
+	color: var(--accent);
 	text-decoration: underline;
 }
 a:visited {
-	color: var(--visited, #e04220);
+	color: var(--accent-light);
 }
 a:hover {
-	color: var(--red-dark, #e01d1d);
+	color: var(--blue-dark);
 }
 blockquote {
-	background-color: rgba(227, 91, 21, 0.1);
-	color: var(--text, #e4cbb3);
+	background-color: var(--accent);
+	color: var(--fg);
 	font-style: italic;
-	border-radius: 4.2px;
-	border-left: 3.5px solid var(--ui, #e35b15);
-	padding: 0.42em;
+	border-radius: 4px;
+	border-left: 3.5px solid var(--accent);
+	padding: 0.4em;
 	margin: 0.8em 0.2em 0.5em 0.2em;
 }
 summary {
 	outline: none;
-	user-select: none;
 }
 hr {
-	background-color: var(--highlight, #f99666);
+	background-color: var(--accent-light);
 }
 code {
-	background-color: var(--background-alt, #291812);
-	color: var(--text);
-	line-height: 1.3;
-	padding-bottom: 20px;
+	background-color: var(--bg-dark);
+	color: var(--fg);
 }
-pre {
-	background: var(--background-alt);
-	color: var(--text);
-}
+pre,
 pre code {
-	background: var(--background-alt);
-	color: var(--text);
+	background: var(--bg-dark);
+	color: var(--fg);
 }
 mark {
-	background-color: var(--highlight, #f99666);
-	color: var(--header);
-	border-radius: 0.7px;
-	padding: 0.7px;
+	background-color: var(--accent-light);
+	color: var(--bg-dark);
 }
-th,
-tr {
-	color: var(--text);
-	border: 1px solid var(--fg-dark);
-}
-/* button {
-	color: var(--text);
-	background-color: var(--ui);
-	border: 0px;
-	padding: 0.7em;
-	cursor: pointer;
-}
-button:hover {
-	background-color: var(--onclick);
-	transition: 300ms;
-} */
 /*--------Custom classes--------*/
 .spoiler {
-	background-color: var(--header);
-	color: var(--header);
+	background-color: var(--bg-dark);
+	color: var(--bg-dark);
 	border-radius: 0.3em;
 	padding: 10px;
 }
 .spoiler:hover {
-	background-color: var(--background-alt);
-	color: var(--highlight);
+	background-color: var(--bg-dark);
+	color: var(--accent-light);
 	transition: ease-in 200ms;
 	transition-delay: 100ms;
 }
 .warning {
 	text-align: center;
-	color: var(--visited);
-	background-color: var(--background-alt);
+	color: var(--red-dark);
+	background-color: var(--bg-dark);
 	padding: 0.5em;
-	border: 4px dashed var(--visited);
+	border: 4px dashed var(--red-dark);
 	border-radius: 0.5em;
 	margin-top: 1em;
 }
 .warning::before,
 .warning::after {
 	content: "!";
-	color: var(--visited);
+	color: var(--red-dark);
 	font-size: 1em;
 }
 .center,
@@ -232,7 +209,10 @@ button:hover {
 	text-align: center;
 }
 .left-align,
-.left,
 .left {
 	text-align: left;
+}
+.right-align,
+.rght {
+	text-align: right;
 }
