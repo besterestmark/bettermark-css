@@ -1,4 +1,40 @@
 :root {
+	/*
+	--bg0: #282828;
+	--bg0_h: #1d2021;
+	--bg0_s: #32302f;
+	--bg1: #3c3836;
+	--bg2: #504945;
+	--bg3: #665c54;
+	--bg4: #7c6f64;
+
+	--fg0: #fbf1c7;
+	--fg1: #ebdbb2;
+	--fg2: #d5c4a1;
+	--fg3: #bdae93;
+	--fg4: #a89984;
+	*/
+
+	/*
+	--base00: #282828;
+	--base01: #3c3836;
+	--base02: #504945;
+	--base03: #665c54;
+	--base04: #bdae93;
+	--base05: #d5c4a1;
+	--base06: #ebdbb2;
+	--base07: #fbf1c7;
+	--base08: #fb4934;
+	--base09: #fe8019;
+	--base0A: #fabd2f;
+	--base0B: #b8bb26;
+	--base0C: #8ec07c;
+	--base0D: #83a598;
+	--base0E: #d3869b;
+	--base0F: #d65d0e;
+	*/
+
+	/*
 	--background: #261b17;
 	--header: #1b110e;
 	--background-alt: #291812;
@@ -24,30 +60,74 @@
 	--brown-light: #291812;
 	--brown-dark: #1b110e;
 	--yellow-light: #fad256;
-	--yellow-dark: #fabc2c;
-}
-::-webkit-scrollbar {
-	/* ACCESSABILITY */
-	display: none;
-	width: 0px;
+	--yellow-dark: #fabc2c; */
+
+	/* version 2 */
+
+	--red-dark: #cc241d;
+	--red-light: #fb4934;
+	--green-dark: #98971a;
+	--green-light: #b8bb26;
+	--yellow-dark: #d79921;
+	--yellow-light: #fabd2f;
+	--blue-dark: #458588;
+	--blue-light: #83a598;
+	--purple-dark: #b16286;
+	--purple-light: #d3869b;
+	--aqua-dark: #689d6a;
+	--aqua-light: #8ec07c;
+	--orange-dark: #d65d0e;
+	--orange-light: #fe8019;
+	--gray-dark: #928374;
+	--gray-light: #a89984;
+	--bg: #282828;
+	--fg: #ebdbb2;
+
+	/* Needed colour vars */
+
+	--bg-dark: #1d2021;
+	--fg-dark: #ebdbb2;
+
+	/* Colour vars made easier to customise */
+
+	--accent: var(--orange-light);
+
+	/* Extra non-colour vars */
+
+	--font: "Fira Code";
+	--font-monospace: "Fira Code";
+	--font-size: 15px;
+
+	/* If many custom fonts (ft = font)*/
+
+	/*
+	--ft-h1: "";
+	--ft-h2: "";
+	--ft-h3: "";
+	--ft-h4: "";
+	--ft-h5: "";
+	--ft-h6: "";
+	--ft-pa: "";
+	--ft-cb: "";
+	*/
 }
 body {
 	padding: 0px;
 }
 html,
 body {
-	font-family: "Fira Code";
-	font-size: 15px;
+	font-family: var(--font);
+	font-size: var(--font-size);
 	line-height: 1.4;
-	background-color: var(--background, #261b17);
-	color: var(--text, #e4cbb3);
+	background-color: var(--bg);
+	color: var(--fg);
 }
 ::selection {
 	color: #fff;
 	background-color: var(--highlight);
 }
 strong {
-	color: var(--text, #e4cbb3);
+	color: var(--fg);
 }
 h1,
 h2,
@@ -55,7 +135,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--highlight, #f99666);
+	color: var(--highlight);
 }
 a {
 	color: var(--ui, #e35b15);
@@ -103,19 +183,12 @@ mark {
 	border-radius: 0.7px;
 	padding: 0.7px;
 }
-ul,
-li,
-dl,
-dt {
-	line-height: 1.9;
-}
-img {
-	padding-top: 7px;
-}
-th {
+th,
+tr {
 	color: var(--text);
+	border: 1px solid var(--fg-dark);
 }
-button {
+/* button {
 	color: var(--text);
 	background-color: var(--ui);
 	border: 0px;
@@ -125,7 +198,7 @@ button {
 button:hover {
 	background-color: var(--onclick);
 	transition: 300ms;
-}
+} */
 /*--------Custom classes--------*/
 .spoiler {
 	background-color: var(--header);
@@ -136,26 +209,30 @@ button:hover {
 .spoiler:hover {
 	background-color: var(--background-alt);
 	color: var(--highlight);
-	transition: 600ms;
-	transition-delay: 175ms;
+	transition: ease-in 200ms;
+	transition-delay: 100ms;
 }
-.WARNING {
+.warning {
 	text-align: center;
 	color: var(--visited);
 	background-color: var(--background-alt);
-	padding: 10px;
-	padding-bottom: 14px;
-	border: 5px dashed var(--visited);
+	padding: 0.5em;
+	border: 4px dashed var(--visited);
 	border-radius: 0.5em;
+	margin-top: 1em;
 }
-.WARNING::before {
+.warning::before,
+.warning::after {
 	content: "!";
 	color: var(--visited);
 	font-size: 1em;
 }
-.WARNING::after {
-	content: "!";
-	color: var(--visited);
-	font-size: 1em;
+.center,
+.cntr {
+	text-align: center;
 }
-
+.left-align,
+.left,
+.left {
+	text-align: left;
+}
