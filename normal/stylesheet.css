@@ -176,6 +176,19 @@ mark {
 	background-color: var(--accent-light);
 	color: var(--bg-dark);
 }
+table, th, tr, td {
+  border-collapse: collapse;
+  border: 1px solid var(--fg-dark);
+  color: var(--fg)
+}
+th {
+  background-color: var(--bg-dark);
+  padding: 0.7em 2em 0.7em 2em;
+  font-weight: bold;
+}
+tr, td {
+  padding: 0.3em 1em 0.3em 1em;
+}
 /*--------Custom classes--------*/
 .spoiler {
 	background-color: var(--bg-dark);
