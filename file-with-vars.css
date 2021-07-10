@@ -1,0 +1,113 @@
+:root {
+	/*
+	--bg0: #282828;
+	--bg0_h: #1d2021;
+	--bg0_s: #32302f;
+	--bg1: #3c3836;
+	--bg2: #504945;
+	--bg3: #665c54;
+	--bg4: #7c6f64;
+
+	--fg0: #fbf1c7;
+	--fg1: #ebdbb2;
+	--fg2: #d5c4a1;
+	--fg3: #bdae93;
+	--fg4: #a89984;
+	*/
+
+	/*
+	--base00: #282828;
+	--base01: #3c3836;
+	--base02: #504945;
+	--base03: #665c54;
+	--base04: #bdae93;
+	--base05: #d5c4a1;
+	--base06: #ebdbb2;
+	--base07: #fbf1c7;
+	--base08: #fb4934;
+	--base09: #fe8019;
+	--base0A: #fabd2f;
+	--base0B: #b8bb26;
+	--base0C: #8ec07c;
+	--base0D: #83a598;
+	--base0E: #d3869b;
+	--base0F: #d65d0e;
+	*/
+
+	/*
+	--background: #261b17;
+	--header: #1b110e;
+	--background-alt: #291812;
+	--hover: #532f28;
+	--highlight: #f99666;
+	--highlight-alt: #fad256;
+	--ui: #e35b15;
+	--ui-alt: #fabc2c;
+	--onclick: #e86420;
+	--visited: #e04220;
+	--green-light: #82a23a;
+	--green-dark: #4d772d;
+	--blue-light: #66a4a4;
+	--blue-dark: #4395a3;
+	--purple-light: #c888e8;
+	--purple-dark: #b666e6;
+	--pink-dark: #fff;
+	--orange-light: #e86420;
+	--orange-dark: #e35b15;
+	--red-light: #e04220;
+	--red-dark: #e01d1d;
+	--brown-light: #291812;
+	--brown-dark: #1b110e;
+	--yellow-light: #fad256;
+	--yellow-dark: #fabc2c; */
+
+	/* version 2 */
+
+	--red-dark: #e01d1d;
+	--red-light: #e04220; /* NEED TO FIX */
+	--green-dark: #4d772d;
+	--green-light: #82a23a;
+	--yellow-dark: #fabc2c;
+	--yellow-light: #fad256;
+	--blue-dark: #4395a3;
+	--blue-light: #66a4a4;
+	--purple-dark: #b666e6;
+	--purple-light: #c888e8;
+	--aqua-dark: #f99666; /* NEED TO FIX */
+	--aqua-light: #aaa; /* NEED TO FIX */
+	--orange-dark: #e35b15;
+	--orange-light: #e86420;
+	--gray-dark: #aaa; /* NEED TO FIX */
+	--gray-light: #aaa; /* NEED TO FIX */
+	--bg: #261b17;
+	--fg: #e4cbb3;
+
+	/* Needed colour vars */
+
+	--bg-dark: #1b110e;
+	--fg-dark: #e4cbb3; /* NEED TO FIX */
+
+	/* Colour vars made easier to customise */
+
+	--accent: var(--orange-dark);
+	--accent-light: var(--aqua-dark);
+
+	/* Extra non-colour vars */
+
+	--font: "Fira Code";
+	--font-monospace: "Fira Code";
+	--font-size: 15px;
+
+	/* If many custom fonts (ft = font)*/
+
+	/*
+	--ft-h1: "";
+	--ft-h2: "";
+	--ft-h3: "";
+	--ft-h4: "";
+	--ft-h5: "";
+	--ft-h6: "";
+	--ft-pa: "";
+	--ft-cb: "";
+	*/
+}
